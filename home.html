@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+    body{
+        margin: 0%;
+        overflow: hidden;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        list-style-type: none;
+        width: 100%;
+        align-items: center;
+        padding: 1%;
+        background-color: rgba(255, 255, 255, 0.54);
+    }
+    nav a{
+        font-family: 'Bitter', serif;
+        text-decoration: none;
+        color: black;
+    }
+    nav a:hover{
+        padding-bottom: 5px;
+        border-bottom: 2px solid black;
+    }
+    nav span{
+        width: 50%;
+    }
+    nav img{
+        width: 10%;
+    }
+    #home{
+        margin: 0%;
+        width: 100%;
+        z-index: -1;
+    }
+    .container{
+        display: flex;
+        margin-left: 10%;
+    }
+    .animate-charcter{
+        position: absolute;
+        margin-top: 17.5%;
+        text-transform: uppercase;
+        background-image: linear-gradient(-225deg,#041524ee 90%,#d4dae6 29%,#68728a 67%,#78869d 100%);
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+        font-size: 190px;
+}
+    @keyframes textclip {
+        to {
+        background-position: 200% center;
+    }
+}
+</style>
+<body>
+    <nav>
+        <span><a href="/fsd project/home.html"><img src="logoep.png" style="width:70px;height:70px;"></a></span>
+        <li><a href="/fsd project/about.html">About</a></li>
+        <li><a href="/fsd project/events.html">Events</a></li>
+        <li><a href="/fsd project/login.html">Login</a></li>
+        <li><a href="/fsd project/team.html">Team</a></li>
+        <li><a href="/fsd project/contact.html">Contact</a></li>
+        <li><a href="/fsd project/feedback.html">Feedback</a></li>
+    </nav>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter">PLAN-NIVIVE</h3>
+          </div>
+        </div>
+    </div>
+    <img src="ep1.jpg" id="home">
+</body>
+</html>

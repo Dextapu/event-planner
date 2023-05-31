@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PLAN-NIVIVE Gender Reveal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+    body {
+      background-color: peachpuff;
+      font-family: Bookman Old Style, sans-serif;
+    }
+
+    .jumbotron {
+      background: transparent;
+      margin-bottom: 0;
+    }
+
+    .jumbotron h1 {
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      font-size: 48px;
+      animation: slide 3s infinite;
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .section {
+      margin: 40px 0;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      perspective: 1000px;
+    }
+
+    .section:hover {
+      transform: scale(1.02) rotateX(5deg) rotateY(5deg);
+    }
+
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      margin-bottom: 20px;
+    }
+
+    .section img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .section a {
+      text-decoration: none;
+    }
+
+    .navigation {
+      font-family: 'Bitter', serif;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.351);
+    }
+
+    .navigation ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-weight: bold;
+    }
+    .navigation li a {
+      text-decoration: none;
+      color: black;
+    }
+    .navigation li:hover{
+      border-bottom: 2px solid black;
+    }
+    .gender-reveal-title {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .gender-reveal-title h1 {
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      font-size: 48px;
+      animation: slide 3s infinite;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .gender-reveal-title p {
+      font-size: 20px;
+      font-style: italic;
+      margin-top: 10px;
+      color: #666;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .description {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .description p {
+      margin-bottom: 20px;
+    }
+
+    .description blockquote {
+      font-style: italic;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .itinerary {
+      margin-top: 40px;
+    }
+
+    .itinerary .row {
+      margin-bottom: 20px;
+    }
+
+    .itinerary .col-md-4 {
+      text-align: center;
+    }
+
+    .itinerary .col-md-4 img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .itinerary .col-md-4 h3 {
+      margin-top: 20px;
+      font-size: 24px;
+    }
+
+    .itinerary .col-md-4 p {
+      margin-top: 10px;
+    }
+
+    #payment {
+      background-color: rgba(119, 112, 112, 0.7);
+      color: rgb(0, 0, 0);
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+      #payment button {
+      background-color: #4CAF50;
+      color: rgb(237, 237, 237);
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    #payment button:hover {
+      background-color: #45a049;
+    }
+    #gallery {
+      color: rgb(7, 7, 7);
+    background-color:  rgba(119, 112, 112, 0.7);
+    padding: 20px;
+}
+
+#gallery img {
+    width: 200%;
+    max-width: 1000px;
+    height: auto; 
+    margin: 10px;
+}
+
+    .book-now {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .book-now a {
+      text-decoration: none;
+      font-size: 24px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #26ed65;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navigation">
+    <ul>
+      <span><a href="/fsd project/home.html"><img src="logoep.png" style="width:70px;height:70px;"></a></span>
+        <li><a href="/fsd project/about.html">About</a></li>
+        <li><a href="/fsd project/events.html">Events</a></li>
+        <li><a href="/fsd project/login.html">Login</a></li>
+        <li><a href="/fsd project/team.html">Team</a></li>
+        <li><a href="/fsd project/contact.html">Contact</a></li>
+        <li><a href="/fsd project/feedback.html">Feedback</a></li>
+      <li><a href="#itinerary">Itinerary</a></li>
+      <li><a href="#payment">Payment</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="gender-reveal-title">
+          <h1>PLAN-NIVIVE GENDER REVEALS</h1>
+          <p>Ignite Life, Create Memories</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="description">
+          <p>At PLAN-NIVIVE Events, we specialize in planning and organizing unforgettable gender reveal celebrations. We understand the significance of this special moment and strive to make it truly magical.</p>
+          <blockquote>"A baby is something you carry inside you for nine months, in your arms for three years, and in your heart until the day you die." - Mary Mason</blockquote>
+          <blockquote>"Sometimes the smallest things take up the most room in your heart." - Winnie the Pooh</blockquote>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div id="itinerary" class="itinerary">
+          <div class="row">
+            <div class="col-md-4">
+              <a href="#">
+                <h3>Venues</h3>
+                <img src="default-venues-image.jpg" alt="Venues">
+              </a>
+              <p>Choose from a variety of stunning venues to host your gender reveal party.</p>
+              <a href="#">View More</a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <h3>Dresses</h3>
+                <img src="default-dresses-image.jpg" alt="Dresses">
+              </a>
+              <p>Discover the perfect outfit for the expectant parents and their loved ones.</p>
+              <a href="#">View More</a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <h3>Themes</h3>
+                <img src="default-themes-image.jpg" alt="Themes">
+              </a>
+              <p>Explore unique and exciting themes to make your gender reveal party extra special.</p>
+              <a href="#">View More</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <a href="#">
+                <h3>Decors</h3>
+                <img src="default-decors-image.jpg" alt="Decors">
+              </a>
+              <p>Enhance the ambiance of your gender reveal celebration with stunning decorations.</p>
+              <a href="#">View More</a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <h3>Catering Services</h3>
+                <img src="default-catering-image.jpg" alt="Catering Services">
+              </a>
+              <p>Enjoy delicious food and drinks catered to your gender reveal party.</p>
+              <a href="#">View More</a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <h3>Photography</h3>
+                <img src="default-photography-image.jpg" alt="Photography">
+              </a>
+              <p>Capture the precious moments of your gender reveal party with professional photography.</p>
+              <a href="#">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="payment" class="container">
+      <h2>Payment</h2>
+      <p>Costs of each services:</p>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Venues
+          <span class="badge badge-primary badge-pill">$3000</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Themes
+          <span class="badge badge-primary badge-pill">$900</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Decors
+          <span class="badge badge-primary badge-pill">$900</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+         Dresses
+          <span class="badge badge-primary badge-pill">$7000</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Catering
+          <span class="badge badge-primary badge-pill">$6000</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Photography
+          <span class="badge badge-primary badge-pill">$3000</span>
+        </li>
+      </ul>
+      <button onclick="location.href='booking.html#payment'" class="btn btn-success">Book Now</button>
+    </div>
+  <br><br><br>
+    <div id="gallery" class="container">
+      <h2>Our Recent Works</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="default-image1.jpg" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+              <img src="default-image2.jpg" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+              <img src="default-image3.jpg" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+              <img src="default-image4.jpg" alt="Image 4">
+            </div>
+            <div class="carousel-item">
+              <img src="default-image5.jpg" alt="Image 5">
+            </div>
+            <div class="carousel-item">
+              <img src="default-image6.jpg" alt="Image 6">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>

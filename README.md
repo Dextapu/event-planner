@@ -1,1 +1,1 @@
-# event-planner
+# Front-end Full Stack Project

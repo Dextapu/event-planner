@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>PLAN-NIVIVE BOOKINGS</title>
+  <style>
+    body {
+      background-image: url("default-image1.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .form-container {
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-container label,
+    .form-container input,
+    .form-container textarea,
+    .form-container select {
+      color: #e4e9ee;
+    }
+
+    .form-container .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .form-container .btn-primary:hover {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .btn-primary-blue {
+      background-color: #007bff;
+      border-color:#007bff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h1 class="text-center mb-4">PLAN-NIVIVE BOOKINGS</h1>
+      <form>
+        <div class="form-row">
+          <div class="col">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+          </div>
+          <div class="col">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email" required>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <label for="phoneNumber">Phone Number</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="countryCode">Country Code</label>
+                </div>
+                <select class="custom-select" id="countryCode">
+                  <option value="+91">+91 (India)</option>
+                  <option value="+44">+44 (UK)</option>
+                  <option value="+1">+1 (USA)</option>
+                </select>
+                <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number" value="+91"
+                  required>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <label for="country">Country</label>
+            <select class="form-control" id="country" required>
+              <option value="">Select Country</option>
+              <option value="Country 1">INDIA</option>
+              <option value="Country 2">UK</option>
+              <option value="Country 3">USA</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="state">State</label>
+            <select class="form-control" id="state" required>
+              <option value="">Select State</option>
+              <option value="State 1">CALIFORNIA</option>
+              <option value="State 2">GOA</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="city">City</label>
+            <select class="form-control" id="city" required>
+              <option value="">Select City</option>
+              <option value="City 1">NYC</option>
+              <option value="City 2">BENGALURU</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <label for="pincode">Pincode</label>
+            <input type="text" class="form-control" id="pincode" placeholder="Pincode" required>
+          </div>
+          <div class="col">
+            <label for="venue">Venue Chosen</label>
+            <select class="form-control" id="venue" required>
+              <option value="">Select Venue</option>
+              <option value="Venue 1">NYC</option>
+              <option value="Venue 2">GOA</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="decor">Decor Chosen</label>
+          <textarea class="form-control" id="decor" rows="3" placeholder="Decor Chosen"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="theme">Theme Chosen</label>
+          <textarea class="form-control" id="theme" rows="3" placeholder="Theme Chosen"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="wardrobe">Wardrobe Choices</label>
+          <textarea class="form-control" id="wardrobe" rows="3" placeholder="Wardrobe Choices"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="catering">Catering Services</label>
+          <textarea class="form-control" id="catering" rows="3" placeholder="Catering Services"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="photography">Photography Services</label>
+          <textarea class="form-control" id="photography" rows="3" placeholder="Photography Services"></textarea>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <label for="eventFromDate">Date of Event (From)</label>
+            <input type="date" class="form-control" id="eventFromDate" required>
+          </div>
+          <div class="col">
+            <label for="eventToDate">Date of Event (To)</label>
+            <input type="date" class="form-control" id="eventToDate" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="eventTiming">Timing of Event Details</label>
+          <textarea class="form-control" id="eventTiming" rows="3" placeholder="Timing of Event Details"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="specialRequirements">Special Requirements</label>
+          <textarea class="form-control" id="specialRequirements" rows="3" placeholder="Special Requirements"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="otherServices">Other Services</label>
+          <textarea class="form-control" id="otherServices" rows="3" placeholder="Other Services"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="payment">Payment Option</label>
+          <div class="d-flex align-items-center">
+            <div class="custom-control custom-radio mr-3">
+              <input type="radio" id="paymentCash" name="paymentOption" class="custom-control-input" value="cash" required>
+              <label class="custom-control-label" for="paymentCash">Cash</label>
+            </div>
+            <div class="custom-control custom-radio mr-3">
+              <input type="radio" id="paymentNetBanking" name="paymentOption" class="custom-control-input" value="netbanking" required>
+              <label class="custom-control-label" for="paymentNetBanking">Net Banking</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="paymentOthers" name="paymentOption" class="custom-control-input" value="others" required>
+              <label class="custom-control-label" for="paymentOthers">Others</label>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-4">
+          <div>
+            <span class="mr-2">Choose a payment method:</span>
+            <img src="cash-icon.png" alt="Cash Icon" width="50" height="30">
+            <img src="paytm-icon.png" alt="Paytm Icon" width="50" height="30">
+            <img src="paypal-icon.png" alt="PayPal Icon" width="70" height="30">
+          </div>
+          <div>
+            <span>Other Banks:</span>
+            <a href="bank1.html"><img src="bank1-icon.png" alt="Bank 1 Icon" width="60" height="40"></a>
+            <a href="bank2.html"><img src="bank2-icon.png" alt="Bank 2 Icon" width="60" height="40"></a>
+            <a href="bank3.html"><img src="bank3-icon.png" alt="Bank 3 Icon" width="80" height="40"></a>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-4">Confirm Booking</button>
+      </div>
+          <div class="mt-5">
+          <a href="/fsd project/feedback.html" class="btn btn-secondary ml-2 btn-primary-blue">Feedback</a>
+          <a href="/fsd project/contact.html" class="btn btn-secondary ml-2 btn-primary-blue">Contact Us</a>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      var countryCodeSelect = document.getElementById('countryCode');
+      var phoneNumberInput = document.getElementById('phoneNumber');
+
+      countryCodeSelect.addEventListener('change', function() {
+        phoneNumberInput.value = countryCodeSelect.value;
+      });
+    </script>
+  </body>
+</html>
